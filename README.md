@@ -77,5 +77,13 @@ Para compilar o código contido na pasta `/src`:
    * `Ultrasonic`
 5. Selecione a placa **DOIT ESP32 DEVKIT V1**, configure a porta serial correspondente e faça o upload.
 
+## 📱 Aplicativo de Controle Avalon (Android)
+
+O controle e a movimentação da maquete são realizados por meio de um aplicativo desenvolvido exclusivamente para o projeto, que se comunica com o ESP32 via protocolo **Bluetooth SPP (Serial Port Profile)**. 
+
+### Principais Funcionalidades do App:
+* **Controle de Movimentação:** Envio de comandos direcionais para frente, ré, esquerda e direita, traduzidos em sinais PWM para os motores.
+* **Painel de Comando de Iluminação:** Botões dedicados para acionamento manual dos faróis de milha e das luzes de sinalização (setas).
+* **Monitoramento e Telemetria:** O aplicativo funciona em via de mão dupla, recebendo dados enviados pelo caminhão e exibindo alertas de proximidade na tela do celular.
 ---
 ETEC Lauro Gomes — Mecatrônica Industrial (M-Tec PI)
