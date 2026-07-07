@@ -1,19 +1,19 @@
 # Maquete de Caminhão Inteligente com Sensores: Manobrabilidade Guiada
 
-Este repositório contém o código-fonte, esquemas de circuitos e documentação para o projeto de Conclusão de Curso (TCC) **Lita Avalon**[cite: 1]. O objetivo do projeto é o desenvolvimento de uma maquete funcional de um caminhão semi-autônomo focado no auxílio à condução segura e manobrabilidade guiada, mitigando acidentes causados por falhas humanas[cite: 1].
+Este repositório contém o código-fonte, esquemas de circuitos e documentação para o projeto de Conclusão de Curso (TCC) **Lita Avalon**. O objetivo do projeto é o desenvolvimento de uma maquete funcional de um caminhão semi-autônomo focado no auxílio à condução segura e manobrabilidade guiada, mitigando acidentes causados por falhas humanas.
 
 ---
 
 ## 👥 Integrantes do Grupo
-* **Andrei Bozato Bandeira**[cite: 1]
-* **Felipe Gabriel Sousa Macedo**[cite: 1]
-* **Italo Bruno Silva**[cite: 1]
-* **Luiz Gustavo Neves do Valle**[cite: 1]
+* **Andrei Bozato Bandeira**
+* **Felipe Gabriel Sousa Macedo**
+* **Italo Bruno Silva**
+* **Luiz Gustavo Neves do Valle**
 
-**Orientadores:** Prof. José Antonio Meire e Prof. Luis Carlos da Silva[cite: 1]  
-**Instituição:** ETEC Lauro Gomes[cite: 1]  
-**Curso:** Ensino Médio com Habilitação Profissional de Técnico em Mecatrônica (M-Tec PI Mecatrônica)[cite: 1]  
-**Ano:** 2025[cite: 1]
+**Orientadores:** Prof. José Antonio Meire e Prof. Luis Carlos da Silva  
+**Instituição:** ETEC Lauro Gomes 
+**Curso:** Ensino Médio com Habilitação Profissional de Técnico em Mecatrônica (M-Tec PI Mecatrônica)
+**Ano:** 2025
 
 ---
 
@@ -21,16 +21,16 @@ Este repositório contém o código-fonte, esquemas de circuitos e documentaçã
 
 Abaixo está a descrição da organização do repositório e o significado de cada diretório e documento:
 
-* **`/src` ou `/codigo_principal`**: Contém o arquivo fonte principal do firmware desenvolvido em C++ no ambiente Arduino IDE para o microcontrolador ESP32[cite: 1].
+* **`/src` ou `/codigo_principal`**: Contém o arquivo fonte principal do firmware desenvolvido em C++ no ambiente Arduino IDE para o microcontrolador ESP32.
 * **`/hardware` ou `/circuitos`**: Reúne os esquemas elétricos, cálculos de drivers de transistores (2N2222A) e mapeamento físico das conexões de alimentação e sensores na protoboard.
-* **`/docs` ou `/monografia`**: Pasta reservada para a documentação textual do TCC (Monografia em PDF, apresentações e referências bibliográficas)[cite: 1].
+* **`/docs` ou `/monografia`**: Pasta reservada para a documentação textual do TCC (Monografia em PDF, apresentações e referências bibliográficas).
 * **`README.md`**: Este arquivo de documentação com a visão geral e instruções de uso do projeto.
 
 ---
 
 ## 📝 Resumo do Projeto
 
-O modelo **Lita Avalon** consiste em uma maquete física simulada de um caminhão elétrico controlado remotamente via Bluetooth[cite: 1]. Utilizando o microcontrolador **ESP32** como unidade central de processamento, o sistema coleta dados de sensores de distância ultrassônicos e de um magnetômetro (bússola digital) para atuar em tempo real na assistência ao condutor, sem retirar deste a responsabilidade total da direção (Classificado nos níveis iniciais de automação SAE)[cite: 1].
+O modelo **Lita Avalon** consiste em uma maquete física simulada de um caminhão elétrico controlado remotamente via Bluetooth. Utilizando o microcontrolador **ESP32** como unidade central de processamento, o sistema coleta dados de sensores de distância ultrassônicos e de um magnetômetro (bússola digital) para atuar em tempo real na assistência ao condutor, sem retirar deste a responsabilidade total da direção (Classificado nos níveis iniciais de automação SAE).
 
 ---
 
@@ -65,7 +65,7 @@ O firmware integra rotinas lógicas para processar as informações periféricas
 
 ## 💻 Configuração do Ambiente e Compilação
 
-Para compilar o código contido na pasta `/src`[cite: 1]:
+Para compilar o código contido na pasta `/src`:
 
 1. Instale a **Arduino IDE** (Versão 2.3.5 ou superior).
 2. Instale o driver **CP2102 da Silicon Labs** no sistema operacional para reconhecimento da porta COM do ESP32.
