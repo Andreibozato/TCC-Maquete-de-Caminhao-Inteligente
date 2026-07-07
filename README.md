@@ -1,89 +1,89 @@
-# Maquete de Caminhão Inteligente com Sensores: Manobrabilidade Guiada
+# Smart Truck Scale Model with Sensors: Guided Maneuverability
 
-Este repositório contém o código-fonte, esquemas de circuitos e documentação para o projeto de Conclusão de Curso (TCC) **Lita Avalon**. O objetivo do projeto é o desenvolvimento de uma maquete funcional de um caminhão semi-autônomo focado no auxílio à condução segura e manobrabilidade guiada, mitigando acidentes causados por falhas humanas.
+This repository contains the source code, circuit diagrams, and documentation for the Capstone Project (TCC) **Lita Avalon**. The objective of the project is the development of a functional scale model of a semi-autonomous truck focused on assisting safe driving and guided maneuverability, mitigating accidents caused by human error.
 
 ---
 
-## 👥 Integrantes do Grupo
+## 👥 Group Members
 * **Andrei Bozato Bandeira**
 * **Felipe Gabriel Sousa Macedo**
 * **Italo Bruno Silva**
 * **Luiz Gustavo Neves do Valle**
 
-**Orientadores:** Prof. José Antonio Meire e Prof. Luis Carlos da Silva  
-**Instituição:** ETEC Lauro Gomes 
-**Curso:** Ensino Médio com Habilitação Profissional de Técnico em Mecatrônica (M-Tec PI Mecatrônica)
-**Ano:** 2025
+**Advisors:** Prof. José Antonio Meire and Prof. Luis Carlos da Silva  
+**Institution:** ETEC Lauro Gomes 
+**Course:** High School with Professional Qualification of Mechatronics Technician (M-Tec PI Mechatronics)
+**Year:** 2025
 
 ---
 
-## 📂 Estrutura de Pastas e Documentos
+## 📂 Folder and Document Structure
 
-Abaixo está a descrição da organização do repositório e o significado de cada diretório e documento:
+Below is the description of the repository organization and the meaning of each directory and document:
 
-* **`/Application`**: Contém o aplicativo utilizado para controlar a maquete do caminhão inteligente.
-* **`/ArduinoCode`**: Contém o arquivo fonte principal do firmware desenvolvido em C++ no ambiente Arduino IDE para o microcontrolador ESP32.
-* **`/documents`**: Pasta reservada para a documentação textual do TCC (Monografia em PDF).
-* **`README.md`**: Este arquivo de documentação com a visão geral e instruções de uso do projeto.
-
----
-
-## 📝 Resumo do Projeto
-
-O modelo **Lita Avalon** consiste em uma maquete física simulada de um caminhão elétrico controlado remotamente via Bluetooth. Utilizando o microcontrolador **ESP32** como unidade central de processamento, o sistema coleta dados de sensores de distância ultrassônicos e de um magnetômetro (bússola digital) para atuar em tempo real na assistência ao condutor, sem retirar deste a responsabilidade total da direção (Classificado nos níveis iniciais de automação SAE).
+* **`/Application`**: Contains the application used to control the smart truck scale model.
+* **`/ArduinoCode`**: Contains the main source file of the firmware developed in C++ in the Arduino IDE environment for the ESP32 microcontroller.
+* **`/documents`**: Folder reserved for the textual documentation of the Capstone Project (Monograph in PDF).
+* **`README.md`**: This documentation file with the overview and usage instructions of the project.
 
 ---
 
-## 🛠️ Especificações Técnicas e Componentes
+## 📝 Project Summary
 
-O desenvolvimento multidisciplinar integrou componentes eletrônicos, mecânicos e programação estruturada em C++:
-
-* **Unidade Central (Cérebro):** ESP32 DEVKIT V1 (30 pinos, Dual-Core, Bluetooth clássico e BLE).
-* **Atuador de Tração:** Motor DC 25GA370 (6V, 320 RPM nominal) acoplado a um motoredutor com relação de transmissão de 26:1, operando com engrenagens de polímero em configuração redutora de velocidade para ganho de torque.
-* **Driver de Potência (Tração):** Módulo Ponte H L298N para inversão de sentido (Frente/Ré) e controle de velocidade por modulação de largura de pulso (PWM).
-* **Atuador de Direção:** Micro Servo Motor SG90 (Controlado por ângulos de 0° a 180° via biblioteca `ESP32Servo`).
-* **Sensores Base:** 
-  * Sensor Ultrassônico HC-SR04 para leitura de distâncias.
-  * Magnetômetro QMC5883L (Bússola I2C) para monitoramento de direção.
-* **Interface Visual (Computador de Bordo):** Display OLED SSD1306 ($128\times64$ pixels) gerenciado com a biblioteca `Adafruit_SSD1306`.
-* **Circuitos Auxiliares:** Transistores NPN 2N2222A atuando como drivers de corrente para os faróis dianteiros e setas (luzes indicadoras de direção).
-* **Alimentação:** Duas baterias de lítio modelo 18650 (fornecendo ~8V em série) reguladas por um módulo Step Down MP1584EN ajustado para 5.5V para alimentar os periféricos.
+The **Lita Avalon** model consists of a simulated physical scale model of an electric truck remotely controlled via Bluetooth. Using the **ESP32** microcontroller as the central processing unit, the system collects data from ultrasonic distance sensors and a magnetometer (digital compass) to act in real time on driver assistance, without removing full driving responsibility from them (Classified in the initial levels of SAE automation).
 
 ---
 
-## 🚘 Funções Semi-Autônomas Implementadas
+## 🛠️ Technical Specifications and Components
 
-O firmware integra rotinas lógicas para processar as informações periféricas e auxiliar na condução segura:
+The multidisciplinary development integrated electronic, mechanical components and structured programming in C++:
 
-1. **Freio Automático:** Monitora a aproximação de obstáculos à frente e bloqueia a aceleração através do corte do ciclo ativo (duty cycle) do PWM caso atinja a distância crítica.
-2. **Controle de Luz pela Distância:** Modula a intensidade luminosa dos faróis em LED (via PWM dedicado) baseado na proximidade de outros veículos.
-3. **Assistência em Manobras de Viragem / Ponto Cego:** Executa rotinas de varredura com os sensores ultrassônicos traseiros em paralelo com o acionamento das setas para alertar sobre colisões laterais.
-4. **Sistema Start Stop:** Desliga o ciclo ativo do motor e emite alertas visuais no computador de bordo para otimização de energia em paradas prolongadas.
-5. **Alerta Sonoro:** Emissão de bips através de um Buzzer Ativo proporcional à proximidade de objetos durante a marcha ré ou frenagem de emergência.
+* **Central Unit (Brain):** ESP32 DEVKIT V1 (30 pins, Dual-Core, classic Bluetooth and BLE).
+* **Traction Actuator:** DC Motor 25GA370 (6V, 320 nominal RPM) coupled to a gear motor with a 26:1 gear ratio, operating with polymer gears in a speed reduction configuration for torque gain.
+* **Power Driver (Traction):** L298N H-Bridge Module for direction reversal (Forward/Reverse) and speed control by pulse width modulation (PWM).
+* **Steering Actuator:** Micro Servo Motor SG90 (Controlled by angles from 0° to 180° via `ESP32Servo` library).
+* **Base Sensors:** 
+  * HC-SR04 Ultrasonic Sensor for distance reading.
+  * QMC5883L Magnetometer (I2C Compass) for direction monitoring.
+* **Visual Interface (On-board Computer):** OLED Display SSD1306 ($128\times64$ pixels) managed with the `Adafruit_SSD1306` library.
+* **Auxiliary Circuits:** NPN Transistors 2N2222A acting as current drivers for the headlights and turn signals (direction indicator lights).
+* **Power Supply:** Two 18650 lithium batteries (providing ~8V in series) regulated by an MP1584EN Step Down module adjusted to 5.5V to power the peripherals.
 
 ---
 
-## 💻 Configuração do Ambiente e Compilação
+## 🚘 Semi-Autonomous Functions Implemented
 
-Para compilar o código contido na pasta `/src`:
+The firmware integrates logical routines to process peripheral information and assist in safe driving:
 
-1. Instale a **Arduino IDE** (Versão 2.3.5 ou superior).
-2. Instale o driver **CP2102 da Silicon Labs** no sistema operacional para reconhecimento da porta COM do ESP32.
-3. Nas *Preferências* da IDE, adicione a URL da placa adicional da Espressif:
+1. **Automatic Brake:** Monitors the approach of obstacles ahead and blocks acceleration by cutting the PWM active cycle (duty cycle) if it reaches the critical distance.
+2. **Light Control by Distance:** Modulates the luminous intensity of the LED headlights (via dedicated PWM) based on the proximity of other vehicles.
+3. **Turning Maneuver / Blind Spot Assistance:** Executes scanning routines with the rear ultrasonic sensors in parallel with the activation of the turn signals to warn about side collisions.
+4. **Start Stop System:** Turns off the motor active cycle and emits visual alerts on the on-board computer for energy optimization during prolonged stops.
+5. **Acoustic Alert:** Emission of beeps through an Active Buzzer proportional to the proximity of objects during reverse gear or emergency braking.
+
+---
+
+## 💻 Environment Setup and Compilation
+
+To compile the code contained in the `/src` folder:
+
+1. Install the **Arduino IDE** (Version 2.3.5 or higher).
+2. Install the **Silicon Labs CP2102** driver in the operating system for recognition of the ESP32 COM port.
+3. In the IDE *Preferences*, add the URL of the additional Espressif board:
    `https://dl.espressif.com/dl/package_esp32_index.json`
-4. Instale as seguintes bibliotecas através do gerenciador interno:
-   * `Adafruit SSD1306` e `Adafruit GFX Library`
+4. Install the following libraries through the internal manager:
+   * `Adafruit SSD1306` and `Adafruit GFX Library`
    * `ESP32Servo`
    * `Ultrasonic`
-5. Selecione a placa **DOIT ESP32 DEVKIT V1**, configure a porta serial correspondente e faça o upload.
+5. Select the **DOIT ESP32 DEVKIT V1** board, configure the corresponding serial port, and upload.
 
-## 📱 Aplicativo de Controle Avalon (Android)
+## 📱 Avalon Control Application (Android)
 
-O controle e a movimentação da maquete são realizados por meio de um aplicativo desenvolvido exclusivamente para o projeto, que se comunica com o ESP32 via protocolo **Bluetooth SPP (Serial Port Profile)**. 
+The control and movement of the scale model are carried out through an application developed exclusively for the project, which communicates with the ESP32 via **Bluetooth SPP (Serial Port Profile)** protocol. 
 
-### Principais Funcionalidades do App:
-* **Controle de Movimentação:** Envio de comandos direcionais para frente, ré, esquerda e direita, traduzidos em sinais PWM para os motores.
-* **Painel de Comando de Iluminação:** Botões dedicados para acionamento manual dos faróis de milha e das luzes de sinalização (setas).
-* **Monitoramento e Telemetria:** O aplicativo funciona em via de mão dupla, recebendo dados enviados pelo caminhão e exibindo alertas de proximidade na tela do celular.
+### Main App Features:
+* **Movement Control:** Sending directional commands for forward, reverse, left, and right, translated into PWM signals for the motors.
+* **Lighting Control Panel:** Dedicated buttons for manual activation of the auxiliary headlights and signaling lights (turn signals).
+* **Monitoring and Telemetry:** The application works in a two-way system, receiving data sent by the truck and displaying proximity alerts on the cell phone screen.
 ---
-ETEC Lauro Gomes — Mecatrônica Industrial (M-Tec PI)
+ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
