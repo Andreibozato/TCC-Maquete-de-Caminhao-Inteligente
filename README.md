@@ -1,10 +1,3 @@
-Aqui está o arquivo **README.md** completo para o repositório do GitHub do seu TCC. Ele foi estruturado de forma limpa, com todas as seções organizadas em Markdown para que você possa copiar e colar diretamente no seu repositório.
-
-A descrição das pastas foi baseada na análise das estruturas padrões de projetos desse tipo com ESP32, e o conteúdo técnico foi extraído fielmente dos dados da monografia.
-
----
-
-```markdown
 # Maquete de Caminhão Inteligente com Sensores: Manobrabilidade Guiada
 
 Este repositório contém o código-fonte, esquemas de circuitos e documentação para o projeto de Conclusão de Curso (TCC) **Lita Avalon**[cite: 1]. O objetivo do projeto é o desenvolvimento de uma maquete funcional de um caminhão semi-autônomo focado no auxílio à condução segura e manobrabilidade guiada, mitigando acidentes causados por falhas humanas[cite: 1].
@@ -83,5 +76,3 @@ Para compilar o código contido na pasta `/src`[cite: 1]:
    * `ESP32Servo`
    * `Ultrasonic`
 5. Selecione a placa **DOIT ESP32 DEVKIT V1**, configure a porta serial correspondente e faça o upload.
-
-```
