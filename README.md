@@ -76,3 +76,6 @@ Para compilar o código contido na pasta `/src`:
    * `ESP32Servo`
    * `Ultrasonic`
 5. Selecione a placa **DOIT ESP32 DEVKIT V1**, configure a porta serial correspondente e faça o upload.
+
+---
+ETEC Lauro Gomes — Mecatrônica Industrial (M-Tec PI)
