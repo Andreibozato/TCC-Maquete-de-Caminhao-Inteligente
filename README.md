@@ -22,7 +22,7 @@ Este repositório contém o código-fonte, esquemas de circuitos e documentaçã
 Abaixo está a descrição da organização do repositório e o significado de cada diretório e documento:
 
 * **`/Application`**: Contém o aplicativo utilizado para controlar a maquete do caminhão inteligente.
-* **`/codigoArduino`**: Contém o arquivo fonte principal do firmware desenvolvido em C++ no ambiente Arduino IDE para o microcontrolador ESP32.
+* **`/ArduinoCode`**: Contém o arquivo fonte principal do firmware desenvolvido em C++ no ambiente Arduino IDE para o microcontrolador ESP32.
 * **`/documents`**: Pasta reservada para a documentação textual do TCC (Monografia em PDF).
 * **`README.md`**: Este arquivo de documentação com a visão geral e instruções de uso do projeto.
 
