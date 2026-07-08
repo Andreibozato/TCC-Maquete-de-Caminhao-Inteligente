@@ -77,7 +77,18 @@ To compile the code contained in the `/src` folder:
    * `Ultrasonic`
 5. Select the **DOIT ESP32 DEVKIT V1** board, configure the corresponding serial port, and upload.
 
-   ## 📺 Demonstrações Práticas e Design
+## 📱 Avalon Control Application (Android)
+
+The control and movement of the scale model are carried out through an application developed exclusively for the project, which communicates with the ESP32 via **Bluetooth SPP (Serial Port Profile)** protocol. 
+
+### Main App Features:
+* **Movement Control:** Sending directional commands for forward, reverse, left, and right, translated into PWM signals for the motors.
+* **Lighting Control Panel:** Dedicated buttons for manual activation of the auxiliary headlights and signaling lights (turn signals).
+* **Monitoring and Telemetry:** The application works in a two-way system, receiving data sent by the truck and displaying proximity alerts on the cell phone screen.
+---
+ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
+
+## 📺 Demonstrações Práticas e Design
 
 Nesta seção estão documentados o funcionamento prático dos sistemas embarcados em pista de testes e a concepção de design tridimensional do projeto.
 
@@ -93,14 +104,3 @@ Nesta seção estão documentados o funcionamento prático dos sistemas embarcad
 
 > **Descrição:** Demonstração do modelo digital em 3D desenvolvido para a estrutura física do caminhão. A modelagem engloba o design aerodinâmico planejado para a acomodação do chassi, eixos de tração/esterçamento e disposição técnica dos módulos eletrônicos.
 
-
-## 📱 Avalon Control Application (Android)
-
-The control and movement of the scale model are carried out through an application developed exclusively for the project, which communicates with the ESP32 via **Bluetooth SPP (Serial Port Profile)** protocol. 
-
-### Main App Features:
-* **Movement Control:** Sending directional commands for forward, reverse, left, and right, translated into PWM signals for the motors.
-* **Lighting Control Panel:** Dedicated buttons for manual activation of the auxiliary headlights and signaling lights (turn signals).
-* **Monitoring and Telemetry:** The application works in a two-way system, receiving data sent by the truck and displaying proximity alerts on the cell phone screen.
----
-ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
