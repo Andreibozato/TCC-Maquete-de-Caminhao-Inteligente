@@ -77,6 +77,23 @@ To compile the code contained in the `/src` folder:
    * `Ultrasonic`
 5. Select the **DOIT ESP32 DEVKIT V1** board, configure the corresponding serial port, and upload.
 
+   ## 📺 Demonstrações Práticas e Design
+
+Nesta seção estão documentados o funcionamento prático dos sistemas embarcados em pista de testes e a concepção de design tridimensional do projeto.
+
+### 1. Demonstração Prática: Teste de Manobrabilidade e Interface de Bordo (OLED)
+*Aqui você arrasta o primeiro vídeo (1000183457.mp4)*
+
+> **Descrição:** O vídeo acima apresenta a maquete do caminhão inteligente executando os comandos de movimentação em pista simulada. No canto esquerdo, é possível acompanhar a sincronização em tempo real do display OLED (computador de bordo), exibindo as mensagens de inicialização da linha LITA Avalon e os parâmetros de direção e PWM do motor.
+
+---
+
+### 2. Modelagem Tridimensional (CAD): Concepção de Design da Cabine Avalon
+*Aqui você arrasta o segundo vídeo (1000183458.mp4)*
+
+> **Descrição:** Demonstração do modelo digital em 3D desenvolvido para a estrutura física do caminhão. A modelagem engloba o design aerodinâmico planejado para a acomodação do chassi, eixos de tração/esterçamento e disposição técnica dos módulos eletrônicos.
+
+
 ## 📱 Avalon Control Application (Android)
 
 The control and movement of the scale model are carried out through an application developed exclusively for the project, which communicates with the ESP32 via **Bluetooth SPP (Serial Port Profile)** protocol. 
