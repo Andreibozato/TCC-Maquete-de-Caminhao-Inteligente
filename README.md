@@ -1,3 +1,5 @@
+
+
 # Smart Truck Scale Model with Sensors: Guided Maneuverability
 
 This repository contains the source code, circuit diagrams, and documentation for the Capstone Project (TCC) **Lita Avalon**. The objective of the project is the development of a functional scale model of a semi-autonomous truck focused on assisting safe driving and guided maneuverability, mitigating accidents caused by human error.
@@ -90,15 +92,11 @@ ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
 
 ## 📺 Demonstrações Práticas e Design
 
-Nesta seção estão documentados o funcionamento prático dos sistemas embarcados em pista de testes e a concepção de design tridimensional do projeto.
+## 📺 Practical Demonstrations and Design
 
-### 1. Demonstração Prática: Teste de Manobrabilidade e Interface de Bordo (OLED)
+In this section is the three-dimensional design conception of the project.
 
 
----
+### 2. Three-Dimensional Modeling (CAD): Design Conception of the Avalon Cabin
 
-### 2. Modelagem Tridimensional (CAD): Concepção de Design da Cabine Avalon
-*Aqui você arrasta o segundo vídeo (1000183458.mp4)*
-
-> **Descrição:** Demonstração do modelo digital em 3D desenvolvido para a estrutura física do caminhão. A modelagem engloba o design aerodinâmico planejado para a acomodação do chassi, eixos de tração/esterçamento e disposição técnica dos módulos eletrônicos.
 
