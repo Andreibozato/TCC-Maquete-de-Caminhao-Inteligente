@@ -87,8 +87,6 @@ The control and movement of the scale model are carried out through an applicati
 * **Movement Control:** Sending directional commands for forward, reverse, left, and right, translated into PWM signals for the motors.
 * **Lighting Control Panel:** Dedicated buttons for manual activation of the auxiliary headlights and signaling lights (turn signals).
 * **Monitoring and Telemetry:** The application works in a two-way system, receiving data sent by the truck and displaying proximity alerts on the cell phone screen.
----
-ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
 
 ## 📺 Practical Demonstrations and Design
 
@@ -98,7 +96,8 @@ In this section is the three-dimensional design conception of the project.
 
 https://github.com/user-attachments/assets/8d9a7322-8c06-492d-8410-a1b85e56a00c
 
-
+---
+ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
 
 
 
