@@ -94,10 +94,11 @@ ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
 
 In this section is the three-dimensional design conception of the project.
 
+### 2. Three-Dimensional Modeling (CAD): Design Conception of the Avalon Cabin
+
 https://github.com/user-attachments/assets/8d9a7322-8c06-492d-8410-a1b85e56a00c
 
 
 
-### 2. Three-Dimensional Modeling (CAD): Design Conception of the Avalon Cabin
 
 
