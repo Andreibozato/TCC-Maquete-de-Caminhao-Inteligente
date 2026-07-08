@@ -90,11 +90,12 @@ The control and movement of the scale model are carried out through an applicati
 ---
 ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
 
-## 📺 Demonstrações Práticas e Design
-
 ## 📺 Practical Demonstrations and Design
 
 In this section is the three-dimensional design conception of the project.
+
+https://github.com/user-attachments/assets/8d9a7322-8c06-492d-8410-a1b85e56a00c
+
 
 
 ### 2. Three-Dimensional Modeling (CAD): Design Conception of the Avalon Cabin
