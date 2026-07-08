@@ -93,9 +93,7 @@ ETEC Lauro Gomes — Industrial Mechatronics (M-Tec PI)
 Nesta seção estão documentados o funcionamento prático dos sistemas embarcados em pista de testes e a concepção de design tridimensional do projeto.
 
 ### 1. Demonstração Prática: Teste de Manobrabilidade e Interface de Bordo (OLED)
-*Aqui você arrasta o primeiro vídeo (1000183457.mp4)*
 
-> **Descrição:** O vídeo acima apresenta a maquete do caminhão inteligente executando os comandos de movimentação em pista simulada. No canto esquerdo, é possível acompanhar a sincronização em tempo real do display OLED (computador de bordo), exibindo as mensagens de inicialização da linha LITA Avalon e os parâmetros de direção e PWM do motor.
 
 ---
 
