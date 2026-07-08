@@ -1,12 +1,10 @@
-
-
 # Smart Truck Scale Model with Sensors: Guided Maneuverability
 
 This repository contains the source code, circuit diagrams, and documentation for the Capstone Project (TCC) **Lita Avalon**. The objective of the project is the development of a functional scale model of a semi-autonomous truck focused on assisting safe driving and guided maneuverability, mitigating accidents caused by human error.
 
 ---
 
-## 👥 Group Members
+## Group Members
 * **Andrei Bozato Bandeira**
 * **Felipe Gabriel Sousa Macedo**
 * **Italo Bruno Silva**
@@ -19,7 +17,7 @@ This repository contains the source code, circuit diagrams, and documentation fo
 
 ---
 
-## 📂 Folder and Document Structure
+## Folder and Document Structure
 
 Below is the description of the repository organization and the meaning of each directory and document:
 
@@ -30,13 +28,13 @@ Below is the description of the repository organization and the meaning of each 
 
 ---
 
-## 📝 Project Summary
+## Project Summary
 
 The **Lita Avalon** model consists of a simulated physical scale model of an electric truck remotely controlled via Bluetooth. Using the **ESP32** microcontroller as the central processing unit, the system collects data from ultrasonic distance sensors and a magnetometer (digital compass) to act in real time on driver assistance, without removing full driving responsibility from them (Classified in the initial levels of SAE automation).
 
 ---
 
-## 🛠️ Technical Specifications and Components
+## Technical Specifications and Components
 
 The multidisciplinary development integrated electronic, mechanical components and structured programming in C++:
 
@@ -53,7 +51,7 @@ The multidisciplinary development integrated electronic, mechanical components a
 
 ---
 
-## 🚘 Semi-Autonomous Functions Implemented
+## Semi-Autonomous Functions Implemented
 
 The firmware integrates logical routines to process peripheral information and assist in safe driving:
 
@@ -65,7 +63,7 @@ The firmware integrates logical routines to process peripheral information and a
 
 ---
 
-## 💻 Environment Setup and Compilation
+## Environment Setup and Compilation
 
 To compile the code contained in the `/src` folder:
 
@@ -79,7 +77,7 @@ To compile the code contained in the `/src` folder:
    * `Ultrasonic`
 5. Select the **DOIT ESP32 DEVKIT V1** board, configure the corresponding serial port, and upload.
 
-## 📱 Avalon Control Application (Android)
+## Avalon Control Application (Android)
 
 The control and movement of the scale model are carried out through an application developed exclusively for the project, which communicates with the ESP32 via **Bluetooth SPP (Serial Port Profile)** protocol. 
 
@@ -88,7 +86,7 @@ The control and movement of the scale model are carried out through an applicati
 * **Lighting Control Panel:** Dedicated buttons for manual activation of the auxiliary headlights and signaling lights (turn signals).
 * **Monitoring and Telemetry:** The application works in a two-way system, receiving data sent by the truck and displaying proximity alerts on the cell phone screen.
 
-## 📺 Practical Demonstrations and Design
+## Practical Demonstrations and Design
 
 In this section is the three-dimensional design conception of the project.
 
